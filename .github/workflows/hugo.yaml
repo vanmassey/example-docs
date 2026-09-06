@@ -36,13 +36,13 @@ jobs:
         id: pages
         uses: actions/configure-pages@v5
 
-        - name: Install Dart Sass
+      - name: Install Dart Sass
         run: |
           curl -L -o sass.tar.gz https://github.com/sass/dart-sass/releases/download/1.93.2/dart-sass-1.93.2-linux-x64.tar.gz
           tar -xzf sass.tar.gz
           echo "$PWD/dart-sass" >> "$GITHUB_PATH"
           sass --version
-          
+
       - name: Build
         run: hugo --gc --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
 
