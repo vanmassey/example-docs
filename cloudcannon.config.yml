@@ -1,0 +1,56 @@
+paths:
+  static: static
+  uploads: static/uploads
+timezone: Europe/London
+markdown:
+  engine: commonmark
+  options:
+    gfm: true
+    linkify: false
+    table: false
+    strikethrough: false
+    subscript: false
+    superscript: false
+    heading_ids: false
+    breaks: false
+    xhtml: false
+    attributes: true
+    typographer: false
+    treat_indentation_as_code: true
+    attribute_elements:
+      h1: none
+      h2: none
+      h3: none
+      h4: none
+      h5: none
+      h6: none
+      blockquote: below
+      hr: below
+      ol: below
+      ul: below
+      p: below
+      table: below
+      img: none
+_snippets_imports:
+  hugo:
+    exclude:
+      - hugo_instagram
+collections_config:
+  pages:
+    path: ''
+    icon: wysiwyg
+  content:
+    path: content
+    icon: wysiwyg
+  en:
+    path: content/en
+    icon: ent
+  fa:
+    path: content/fa
+    icon: fax
+  no:
+    path: content/no
+    icon: 1k
+  tasks:
+    path: tasks
+    icon: masks
